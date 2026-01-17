@@ -120,10 +120,10 @@ const nextConfig: NextConfig = {
     NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000",
   },
 
-  // Webpack configuration
-  webpack: (config, { isServer }) => {
-    config.optimization.minimize = true;
-    return config;
+  // Webpack configuration (removed for Turbopack compatibility)
+  // Turbopack is enabled by default in Next.js 16
+  turbopack: {
+    // Turbopack configuration
   },
 
   // Experimental features (optional)
