@@ -66,7 +66,7 @@ export interface SensorDataPoint {
   timestamp: number;
   accelerometer: SensorReading;
   gyroscope: SensorReading;
-  magnetometer?: MagnetometerReading;
+  magnetometer?: SensorReading;
   performance?: PerformanceMetrics;
   orientation?: DeviceOrientation;
 }
