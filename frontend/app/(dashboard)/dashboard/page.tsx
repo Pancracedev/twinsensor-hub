@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useDevice } from '../../hooks';
-import { Card, Spinner, DeviceStatus, ConnectionIndicator } from '../../components';
+import { Card, Spinner, DeviceStatus } from '../../components';
 
 export default function DashboardPage() {
   const router = useRouter();

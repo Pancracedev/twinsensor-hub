@@ -3,6 +3,7 @@
  * Types for WebSocket communication and events
  */
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export interface SocketMessage<T = any> {
   type: string;
   payload: T;
@@ -21,4 +22,5 @@ export interface SocketError {
   recoverable: boolean;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type SocketHandler<T = any> = (data: T) => void | Promise<void>;

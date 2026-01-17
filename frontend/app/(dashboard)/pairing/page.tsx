@@ -10,7 +10,6 @@ import {
   Spinner,
   DeviceStatus,
   DeviceIDDisplay,
-  ConnectionIndicator,
 } from '../../components';
 
 export default function PairingPage() {
@@ -26,7 +25,6 @@ export default function PairingPage() {
     disconnect,
   } = useDevice();
 
-  const [showCopied, setShowCopied] = useState(false);
   const [connectionError, setConnectionError] = useState<string | null>(null);
 
   // Auto-redirect to dashboard if already connected
@@ -58,18 +56,6 @@ export default function PairingPage() {
       const errorMessage =
         err instanceof Error ? err.message : 'Failed to disconnect';
       setConnectionError(errorMessage);
-    }
-  };
-
-  const handleCopyDeviceId = async () => {
-    if (deviceId) {
-      try {
-        await navigator.clipboard.writeText(deviceId);
-        setShowCopied(true);
-        setTimeout(() => setShowCopied(false), 2000);
-      } catch (err) {
-        console.error('Failed to copy device ID:', err);
-      }
     }
   };
 
@@ -229,7 +215,7 @@ export default function PairingPage() {
               QR code
             </li>
             <li className="text-gray-300">
-              <span className="font-medium">Tap "Connect"</span> on both devices
+              <span className="font-medium">Tap &quot;Connect&quot;</span> on both devices
             </li>
             <li className="text-gray-300">
               <span className="font-medium">Wait for confirmation</span> and enjoy

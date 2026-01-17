@@ -3,6 +3,7 @@
 import { useEffect, useCallback } from 'react';
 import { socketService } from '../services';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const useSocket = <T = any>(
   event: string,
   callback: (data: T) => void,

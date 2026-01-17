@@ -2,7 +2,6 @@
 
 import { ReactNode } from 'react';
 import Link from 'next/link';
-import { ConnectionIndicator } from '../components';
 
 export default function DashboardLayout({ children }: { children: ReactNode }) {
   return (
@@ -36,11 +35,6 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
                 Pairing
               </Link>
             </nav>
-
-            {/* Connection Status */}
-            <div className="flex items-center space-x-2">
-              <ConnectionIndicator />
-            </div>
           </div>
         </div>
       </header>
