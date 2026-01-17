@@ -8,6 +8,7 @@ export interface Device {
   name: string;
   type: 'phone' | 'tablet' | 'wearable';
   osVersion: string;
+  deviceInfo: DeviceInfo;
   createdAt: Date;
   lastConnected: Date;
   isOnline: boolean;

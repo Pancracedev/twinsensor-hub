@@ -72,6 +72,7 @@ class DeviceService {
       name: `Device-${deviceId.slice(-4)}`,
       type: this.getDeviceType(),
       osVersion: this.getOSVersion(),
+      deviceInfo: this.getDeviceInfo(),
       createdAt: now,
       lastConnected: now,
       isOnline: true,
