@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1125 2436">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="splashGrad1125" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#007aff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0051d5;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1125" height="2436" fill="url(#splashGrad1125)" />
+
+  <!-- Decorative shapes -->
+  <circle cx="1125" cy="0" r="400" fill="rgba(255,255,255,0.1)" />
+  <circle cx="0" cy="2436" r="500" fill="rgba(255,255,255,0.05)" />
+
+  <!-- Main logo area (centered) -->
+  <g transform="translate(562.5, 900)">
+    <!-- Icon circle background -->
+    <circle cx="0" cy="0" r="200" fill="rgba(255,255,255,0.2)" />
+
+    <!-- Icon -->
+    <g>
+      <circle cx="0" cy="0" r="140" fill="none" stroke="white" stroke-width="7" opacity="0.6" />
+      <circle cx="0" cy="0" r="85" fill="white" opacity="0.8" />
+      
+      <!-- Sensor points -->
+      <g>
+        <line x1="-100" y1="0" x2="-140" y2="0" stroke="white" stroke-width="6" />
+        <circle cx="-160" cy="0" r="15" fill="white" />
+        
+        <line x1="100" y1="0" x2="140" y2="0" stroke="white" stroke-width="6" />
+        <circle cx="160" cy="0" r="15" fill="white" />
+        
+        <line x1="0" y1="-100" x2="0" y2="-140" stroke="white" stroke-width="6" />
+        <circle cx="0" cy="-160" r="15" fill="white" />
+        
+        <line x1="0" y1="100" x2="0" y2="140" stroke="white" stroke-width="6" />
+        <circle cx="0" cy="160" r="15" fill="white" />
+      </g>
+    </g>
+  </g>
+
+  <!-- App name -->
+  <text x="562.5" y="1250" font-family="system-ui, -apple-system, sans-serif" font-size="80" font-weight="bold" text-anchor="middle" fill="white">
+    Twin Sensor
+  </text>
+  <text x="562.5" y="1340" font-family="system-ui, -apple-system, sans-serif" font-size="60" font-weight="300" text-anchor="middle" fill="rgba(255,255,255,0.9)">
+    Hub
+  </text>
+
+  <!-- Tagline -->
+  <text x="562.5" y="1430" font-family="system-ui, -apple-system, sans-serif" font-size="36" text-anchor="middle" fill="rgba(255,255,255,0.7)">
+    Real-time Monitoring
+  </text>
+</svg>

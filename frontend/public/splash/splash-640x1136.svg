@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1136">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="splashGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#007aff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0051d5;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="640" height="1136" fill="url(#splashGrad)" />
+
+  <!-- Decorative shapes -->
+  <circle cx="640" cy="0" r="200" fill="rgba(255,255,255,0.1)" />
+  <circle cx="0" cy="1136" r="300" fill="rgba(255,255,255,0.05)" />
+
+  <!-- Main logo area (centered) -->
+  <g transform="translate(320, 380)">
+    <!-- Icon circle background -->
+    <circle cx="0" cy="0" r="120" fill="rgba(255,255,255,0.2)" />
+
+    <!-- Icon -->
+    <g>
+      <circle cx="0" cy="0" r="80" fill="none" stroke="white" stroke-width="4" opacity="0.6" />
+      <circle cx="0" cy="0" r="50" fill="white" opacity="0.8" />
+      
+      <!-- Sensor points -->
+      <g>
+        <line x1="-60" y1="0" x2="-80" y2="0" stroke="white" stroke-width="3" />
+        <circle cx="-90" cy="0" r="8" fill="white" />
+        
+        <line x1="60" y1="0" x2="80" y2="0" stroke="white" stroke-width="3" />
+        <circle cx="90" cy="0" r="8" fill="white" />
+        
+        <line x1="0" y1="-60" x2="0" y2="-80" stroke="white" stroke-width="3" />
+        <circle cx="0" cy="-90" r="8" fill="white" />
+        
+        <line x1="0" y1="60" x2="0" y2="80" stroke="white" stroke-width="3" />
+        <circle cx="0" cy="90" r="8" fill="white" />
+      </g>
+    </g>
+  </g>
+
+  <!-- App name -->
+  <text x="320" y="580" font-family="system-ui, -apple-system, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="white">
+    Twin Sensor
+  </text>
+  <text x="320" y="630" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="300" text-anchor="middle" fill="rgba(255,255,255,0.9)">
+    Hub
+  </text>
+
+  <!-- Tagline -->
+  <text x="320" y="680" font-family="system-ui, -apple-system, sans-serif" font-size="20" text-anchor="middle" fill="rgba(255,255,255,0.7)">
+    Real-time Monitoring
+  </text>
+</svg>

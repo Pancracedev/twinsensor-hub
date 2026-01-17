@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="deskGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#121212;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1e1e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="deskAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#007aff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0051d5;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#deskGrad)" />
+
+  <!-- Sidebar -->
+  <rect width="280" height="720" fill="#0f0f0f" />
+
+  <!-- Logo area -->
+  <circle cx="140" cy="50" r="30" fill="url(#deskAccent)" />
+  <text x="140" y="58" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">
+    TS
+  </text>
+
+  <!-- Navigation items -->
+  <rect x="20" y="100" width="240" height="45" rx="8" fill="url(#deskAccent)" opacity="0.8" />
+  <text x="60" y="130" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="white">
+    Dashboard
+  </text>
+
+  <rect x="20" y="160" width="240" height="45" rx="8" fill="#2a2a2a" />
+  <text x="60" y="190" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#888888">
+    History
+  </text>
+
+  <rect x="20" y="220" width="240" height="45" rx="8" fill="#2a2a2a" />
+  <text x="60" y="250" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#888888">
+    Analytics
+  </text>
+
+  <rect x="20" y="280" width="240" height="45" rx="8" fill="#2a2a2a" />
+  <text x="60" y="310" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#888888">
+    Settings
+  </text>
+
+  <!-- Main content area -->
+  <!-- Header -->
+  <text x="300" y="40" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="bold" fill="white">
+    Real-time Dashboard
+  </text>
+
+  <!-- Stats cards -->
+  <!-- Card 1 -->
+  <rect x="300" y="70" width="280" height="180" rx="12" fill="#2a2a2a" />
+  <text x="320" y="100" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#888888">
+    Temperature
+  </text>
+  <text x="320" y="160" font-family="system-ui, -apple-system, sans-serif" font-size="48" font-weight="bold" fill="url(#deskAccent)">
+    23.5°C
+  </text>
+  <text x="320" y="190" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#555555">
+    Normal • Last 24h avg: 22.8°C
+  </text>
+
+  <!-- Card 2 -->
+  <rect x="610" y="70" width="280" height="180" rx="12" fill="#2a2a2a" />
+  <text x="630" y="100" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#888888">
+    Humidity
+  </text>
+  <text x="630" y="160" font-family="system-ui, -apple-system, sans-serif" font-size="48" font-weight="bold" fill="url(#deskAccent)">
+    65%
+  </text>
+  <text x="630" y="190" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#555555">
+    Optimal • Last 24h avg: 62%
+  </text>
+
+  <!-- Card 3 -->
+  <rect x="920" y="70" width="280" height="180" rx="12" fill="#2a2a2a" />
+  <text x="940" y="100" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#888888">
+    Pressure
+  </text>
+  <text x="940" y="160" font-family="system-ui, -apple-system, sans-serif" font-size="48" font-weight="bold" fill="url(#deskAccent)">
+    1013 hPa
+  </text>
+  <text x="940" y="190" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#555555">
+    Stable • Last 24h avg: 1012 hPa
+  </text>
+
+  <!-- Chart area -->
+  <rect x="300" y="290" width="900" height="350" rx="12" fill="#2a2a2a" />
+  <text x="320" y="320" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="white">
+    24-Hour Trend
+  </text>
+
+  <!-- Simple chart visualization -->
+  <polyline points="350,500 420,450 490,480 560,420 630,440 700,380 770,400 840,350 910,370 980,330 1050,350 1120,300 1190,320" stroke="url(#deskAccent)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <polyline points="350,500 420,450 490,480 560,420 630,440 700,380 770,400 840,350 910,370 980,330 1050,350 1120,300 1190,320" stroke="url(#deskAccent)" stroke-width="0" fill="url(#deskAccent)" fill-opacity="0.2" />
+
+  <!-- Time labels -->
+  <text x="350" y="610" font-family="system-ui, -apple-system, sans-serif" font-size="11" text-anchor="middle" fill="#666666">
+    00:00
+  </text>
+  <text x="630" y="610" font-family="system-ui, -apple-system, sans-serif" font-size="11" text-anchor="middle" fill="#666666">
+    12:00
+  </text>
+  <text x="910" y="610" font-family="system-ui, -apple-system, sans-serif" font-size="11" text-anchor="middle" fill="#666666">
+    20:00
+  </text>
+  <text x="1190" y="610" font-family="system-ui, -apple-system, sans-serif" font-size="11" text-anchor="middle" fill="#666666">
+    23:59
+  </text>
+</svg>
