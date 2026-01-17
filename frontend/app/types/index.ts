@@ -5,3 +5,4 @@
 
 export * from './device.types';
 export * from './socket.types';
+export * from './sensor.types';
