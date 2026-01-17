@@ -58,6 +58,12 @@ export default function Home() {
               >
                 Monitoring
               </Link>
+              <Link
+                href="/anomalies"
+                className="text-sm font-medium text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 transition-colors"
+              >
+                Anomalies
+              </Link>
               <div
                 className={`h-3 w-3 rounded-full transition-colors ${
                   isConnected
@@ -229,6 +235,12 @@ export default function Home() {
                 className="text-sm text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 transition-colors"
               >
                 Monitoring
+              </Link>
+              <Link
+                href="/anomalies"
+                className="text-sm text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 transition-colors"
+              >
+                Anomalies
               </Link>
               <Link
                 href="/pairing"
