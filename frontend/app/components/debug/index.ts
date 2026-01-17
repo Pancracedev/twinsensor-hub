@@ -1,0 +1,1 @@
+export { IntegrationTest } from './IntegrationTest';

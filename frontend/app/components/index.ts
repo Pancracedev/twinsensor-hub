@@ -11,3 +11,6 @@ export * from './device';
 
 // Sensor components (Phase 2)
 export * from './sensors';
+
+// Debug components
+export * from './debug';

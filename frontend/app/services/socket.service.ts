@@ -73,7 +73,7 @@ class SocketService {
   private emitDeviceConnect(deviceId: string): void {
     if (!this.socket) return;
 
-    this.socket.emit(SOCKET_EVENTS.DEVICE_CONNECT, {
+    this.socket.emit(SOCKET_EVENTS.CLIENT_CONNECT, {
       deviceId,
       sessionId: this.generateSessionId(),
       timestamp: Date.now(),
@@ -88,7 +88,7 @@ class SocketService {
       if (this.socket?.connected) {
         const deviceId = useDeviceStore.getState().deviceId;
         if (deviceId) {
-          this.socket.emit(SOCKET_EVENTS.DEVICE_HEARTBEAT, {
+          this.socket.emit(SOCKET_EVENTS.CLIENT_HEARTBEAT, {
             deviceId,
             timestamp: Date.now(),
           });

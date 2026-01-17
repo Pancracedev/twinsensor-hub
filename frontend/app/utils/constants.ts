@@ -21,22 +21,30 @@ export const APP_CONFIG = {
 
 export const SOCKET_EVENTS = {
   // Client to Server
-  DEVICE_CONNECT: 'device:connect',
-  DEVICE_DISCONNECT: 'device:disconnect',
-  DEVICE_HEARTBEAT: 'device:heartbeat',
-
-  // Phase 2: Sensor data events
-  DATA_REQUEST_STREAM: 'data:request-stream',
-  DATA_STOP_STREAM: 'data:stop-stream',
-  SENSOR_ACCELEROMETER: 'sensor:accelerometer',
-  SENSOR_GYROSCOPE: 'sensor:gyroscope',
-  SENSOR_MAGNETOMETER: 'sensor:magnetometer',
-  DEVICE_PERFORMANCE: 'device:performance',
+  CLIENT_CONNECT: 'client:connect',
+  CLIENT_DISCONNECT: 'client:disconnect',
+  CLIENT_HEARTBEAT: 'client:heartbeat',
+  CLIENT_SENSOR_DATA: 'client:sensor:data',
+  CLIENT_PERFORMANCE_METRICS: 'client:performance:metrics',
 
   // Server to Client
-  DEVICE_CONNECTED: 'device:connected',
-  DEVICE_DISCONNECTED: 'device:disconnected',
+  SERVER_CONNECTED: 'server:connected',
+  SERVER_DISCONNECTED: 'server:disconnected',
   SERVER_ERROR: 'server:error',
+  SERVER_HEARTBEAT_ACK: 'server:heartbeat:ack',
+  SERVER_SENSOR_RECEIVED: 'server:sensor:received',
+  SERVER_PERFORMANCE_RECEIVED: 'server:performance:received',
+  SERVER_ANOMALY_DETECTED: 'server:anomaly:detected',
+  SERVER_ANOMALIES_BATCH: 'server:anomalies:batch',
+
+  // Device events
+  CLIENT_DEVICE_UPDATE: 'client:device:update',
+  SERVER_DEVICE_UPDATED: 'server:device:updated',
+
+  // Session events
+  CLIENT_SESSION_START: 'client:session:start',
+  CLIENT_SESSION_END: 'client:session:end',
+  SERVER_SESSION_ACTIVE: 'server:session:active',
 };
 
 export const HTTP_STATUS = {
