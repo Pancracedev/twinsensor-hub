@@ -1,0 +1,15 @@
+{
+  "globDirectory": "public/",
+  "globPatterns": [
+    "**/*.{js,css,html,png,jpg,jpeg,svg,gif,webp,woff,woff2,ttf,eot}"
+  ],
+  "globIgnores": [
+    "**/node_modules/**/*",
+    "**/*.map",
+    "**/sw.js"
+  ],
+  "maximumFileSizeToCacheInBytes": 5242880,
+  "swDest": "public/sw-generated.js",
+  "skipWaiting": true,
+  "clientsClaim": true
+}

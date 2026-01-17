@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 720">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#121212;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1e1e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#007aff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0051d5;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="540" height="720" fill="url(#screenGrad)" />
+
+  <!-- Status bar -->
+  <rect width="540" height="60" fill="#0a0a0a" />
+  <text x="270" y="38" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#ffffff">
+    9:41
+  </text>
+
+  <!-- Header -->
+  <rect y="60" width="540" height="80" fill="url(#accentGrad)" />
+  <text x="270" y="115" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="white">
+    Twin Sensor Hub
+  </text>
+
+  <!-- Content area -->
+  <!-- Card 1 -->
+  <rect x="20" y="160" width="500" height="120" rx="12" fill="#2a2a2a" />
+  <text x="40" y="185" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#ffffff">
+    Sensor #1
+  </text>
+  <rect x="40" y="200" width="120" height="30" rx="6" fill="url(#accentGrad)" />
+  <text x="100" y="222" font-family="system-ui, -apple-system, sans-serif" font-size="12" text-anchor="middle" fill="white">
+    Temperature
+  </text>
+  <text x="40" y="255" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="bold" fill="url(#accentGrad)">
+    23.5°C
+  </text>
+  <text x="40" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#888888">
+    Last update: 2 min ago
+  </text>
+
+  <!-- Card 2 -->
+  <rect x="20" y="300" width="500" height="120" rx="12" fill="#2a2a2a" />
+  <text x="40" y="325" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#ffffff">
+    Sensor #2
+  </text>
+  <rect x="40" y="340" width="120" height="30" rx="6" fill="url(#accentGrad)" />
+  <text x="100" y="362" font-family="system-ui, -apple-system, sans-serif" font-size="12" text-anchor="middle" fill="white">
+    Humidity
+  </text>
+  <text x="40" y="395" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="bold" fill="url(#accentGrad)">
+    65%
+  </text>
+  <text x="40" y="420" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#888888">
+    Last update: 1 min ago
+  </text>
+
+  <!-- Card 3 -->
+  <rect x="20" y="440" width="500" height="120" rx="12" fill="#2a2a2a" />
+  <text x="40" y="465" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#ffffff">
+    Sensor #3
+  </text>
+  <rect x="40" y="480" width="120" height="30" rx="6" fill="url(#accentGrad)" />
+  <text x="100" y="502" font-family="system-ui, -apple-system, sans-serif" font-size="12" text-anchor="middle" fill="white">
+    Pressure
+  </text>
+  <text x="40" y="535" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="bold" fill="url(#accentGrad)">
+    1013 hPa
+  </text>
+  <text x="40" y="560" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#888888">
+    Last update: Just now
+  </text>
+
+  <!-- Bottom navigation -->
+  <rect y="600" width="540" height="120" fill="#0f0f0f" />
+  <g opacity="0.6">
+    <circle cx="90" cy="650" r="20" fill="#007aff" />
+    <text x="90" y="690" font-family="system-ui, -apple-system, sans-serif" font-size="11" text-anchor="middle" fill="#ffffff">
+      Dashboard
+    </text>
+  </g>
+  <g opacity="0.3">
+    <circle cx="270" cy="650" r="20" fill="#888888" />
+    <text x="270" y="690" font-family="system-ui, -apple-system, sans-serif" font-size="11" text-anchor="middle" fill="#ffffff">
+      History
+    </text>
+  </g>
+  <g opacity="0.3">
+    <circle cx="450" cy="650" r="20" fill="#888888" />
+    <text x="450" y="690" font-family="system-ui, -apple-system, sans-serif" font-size="11" text-anchor="middle" fill="#ffffff">
+      Settings
+    </text>
+  </g>
+</svg>

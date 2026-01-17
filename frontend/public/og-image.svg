@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="ogGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#007aff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0051d5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#003a99;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#ogGrad)" />
+
+  <!-- Decorative circles -->
+  <circle cx="-100" cy="315" r="300" fill="rgba(255,255,255,0.1)" />
+  <circle cx="1300" cy="315" r="350" fill="rgba(255,255,255,0.05)" />
+  <circle cx="600" cy="700" r="250" fill="rgba(255,255,255,0.08)" />
+
+  <!-- Left side - Icon -->
+  <g transform="translate(300, 315)">
+    <!-- Icon background circle -->
+    <circle cx="0" cy="0" r="150" fill="rgba(255,255,255,0.15)" />
+
+    <!-- Icon -->
+    <circle cx="0" cy="0" r="110" fill="none" stroke="white" stroke-width="6" opacity="0.8" />
+    <circle cx="0" cy="0" r="65" fill="rgba(255,255,255,0.9)" />
+
+    <!-- Sensor points -->
+    <g>
+      <line x1="-90" y1="0" x2="-130" y2="0" stroke="white" stroke-width="5" stroke-linecap="round" />
+      <circle cx="-150" cy="0" r="12" fill="white" />
+
+      <line x1="90" y1="0" x2="130" y2="0" stroke="white" stroke-width="5" stroke-linecap="round" />
+      <circle cx="150" cy="0" r="12" fill="white" />
+
+      <line x1="0" y1="-90" x2="0" y2="-130" stroke="white" stroke-width="5" stroke-linecap="round" />
+      <circle cx="0" cy="-150" r="12" fill="white" />
+
+      <line x1="0" y1="90" x2="0" y2="130" stroke="white" stroke-width="5" stroke-linecap="round" />
+      <circle cx="0" cy="150" r="12" fill="white" />
+    </g>
+  </g>
+
+  <!-- Right side - Text -->
+  <g>
+    <!-- Main title -->
+    <text x="600" y="200" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="72" font-weight="bold" fill="white" text-anchor="start">
+      Twin Sensor
+    </text>
+    <text x="600" y="290" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="72" font-weight="bold" fill="white" text-anchor="start">
+      Hub
+    </text>
+
+    <!-- Subtitle -->
+    <text x="600" y="360" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="32" fill="rgba(255,255,255,0.95)" text-anchor="start">
+      Real-time Sensor Monitoring
+    </text>
+
+    <!-- Features list -->
+    <g font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="24" fill="rgba(255,255,255,0.85)">
+      <text x="600" y="420">✓ Live Data Synchronization</text>
+      <text x="600" y="465">✓ Offline Functionality</text>
+      <text x="600" y="510">✓ Progressive Web App</text>
+    </g>
+  </g>
+
+  <!-- Bottom accent bar -->
+  <rect y="550" width="1200" height="80" fill="rgba(255,255,255,0.1)" />
+  <text x="600" y="600" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="600" text-anchor="middle" fill="white">
+    Available on Web • iOS • Android
+  </text>
+</svg>
