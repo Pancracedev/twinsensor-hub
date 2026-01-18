@@ -7,3 +7,5 @@ export { useDevice } from './useDevice';
 export { useSocket } from './useSocket';
 export { useSensorData } from './useSensorData';
 export { usePerformanceMetrics } from './usePerformanceMetrics';
+export { useAnomalyDetection } from './useAnomalyDetection';
+export { useMobileSensors } from './useMobileSensors';

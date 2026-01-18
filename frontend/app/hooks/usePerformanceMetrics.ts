@@ -138,7 +138,7 @@ export const usePerformanceMetrics = () => {
   // Setup Socket.io listener for performance data
   useEffect(() => {
     useSocket(
-      SOCKET_EVENTS.DEVICE_PERFORMANCE,
+      SOCKET_EVENTS.SERVER_PERFORMANCE_RECEIVED,
       handlePerformanceData,
       true
     );

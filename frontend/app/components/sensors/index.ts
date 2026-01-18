@@ -7,3 +7,4 @@ export { SensorStatus } from './SensorStatus';
 export { PerformanceMetrics } from './PerformanceMetrics';
 export { SensorReadings } from './SensorReadings';
 export { DeviceOrientationDisplay } from './DeviceOrientationDisplay';
+export { Phone3DVisualizer } from './Phone3DVisualizer';

@@ -26,7 +26,7 @@ export const useSensorData = () => {
   } = useSensorStore();
 
   const { emit: emitSocket } = useSocket(
-    SOCKET_EVENTS.SENSOR_ACCELEROMETER,
+    SOCKET_EVENTS.CLIENT_SENSOR_DATA,
     () => {},
     false
   );
@@ -204,19 +204,19 @@ export const useSensorData = () => {
   // Setup Socket.io listeners
   useEffect(() => {
     const { emit: emitAccel } = useSocket(
-      SOCKET_EVENTS.SENSOR_ACCELEROMETER,
+      SOCKET_EVENTS.SERVER_SENSOR_RECEIVED,
       handleAccelerometerData,
       streamState.isStreaming
     );
 
     const { emit: emitGyro } = useSocket(
-      SOCKET_EVENTS.SENSOR_GYROSCOPE,
+      SOCKET_EVENTS.SERVER_SENSOR_RECEIVED,
       handleGyroscopeData,
       streamState.isStreaming
     );
 
     const { emit: emitMag } = useSocket(
-      SOCKET_EVENTS.SENSOR_MAGNETOMETER,
+      SOCKET_EVENTS.SERVER_SENSOR_RECEIVED,
       handleMagnetometerData,
       streamState.isStreaming
     );
