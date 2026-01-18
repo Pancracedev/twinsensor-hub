@@ -191,6 +191,8 @@ export const socketService = {
   disconnect: () => getSocketService().disconnect(),
   on: <T = any>(event: string, callback: (data: T) => void) =>
     getSocketService().on(event, callback),
+  once: <T = any>(event: string, callback: (data: T) => void) =>
+    getSocketService().once(event, callback),
   off: (event: string) => getSocketService().off(event),
   emit: <T = any>(event: string, data: T) =>
     getSocketService().emit(event, data),

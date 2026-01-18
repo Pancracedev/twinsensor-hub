@@ -69,7 +69,7 @@ export const IntegrationTest = () => {
 
       const timeout = new Promise((resolve) => setTimeout(resolve, 3000));
       const response = new Promise<void>((resolve) => {
-        socketService.once(SOCKET_EVENTS.SERVER_CONNECTED, (data) => {
+        socketService.once<any>(SOCKET_EVENTS.SERVER_CONNECTED, (data: any) => {
           serverResponded = true;
           updateResult(2, 'success', `Server confirmed: ${JSON.stringify(data).substring(0, 30)}...`);
           resolve();
