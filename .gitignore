@@ -1,0 +1,98 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+.env.production.local
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+*.tsbuildinfo
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+.env.swp
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Testing
+.mocha_timeout
+.jest_cache/
+.cache/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Documentation (MD files to ignore)
+PHASE-*.md
+ANALYSIS-*.md
+DEPENDENCIES-*.md
+DOCUMENTATION-*.md
+EXECUTIVE-*.md
+FRONTEND-*.md
+GET-STARTED.md
+IMPLEMENTATION-*.md
+PHASE-*-CHECKLIST.md
+PHASE-*-PLAN.md
+PROJECT-SUMMARY.md
+READY-TO-BUILD.md
+
+# Keep these important docs
+!README.md
+!CONTRIBUTING.md
+!LICENSE.md
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+mongodb/
+data/
+
+# Cache
+.cache/
+.eslintcache
+
+# Misc
+.turbo/
+.venv/
+venv/
+env/
