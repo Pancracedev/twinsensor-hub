@@ -36,6 +36,11 @@ export const useMobileSensors = (): UseMobileSensorsResult => {
   const [acceleration, setAcceleration] = useState<DeviceAcceleration | null>(null);
   const [isListening, setIsListening] = useState(false);
 
+  // Initialize service on mount
+  useEffect(() => {
+    mobileSensorService.initialize();
+  }, []);
+
   // Request permission for sensors
   const requestPermission = useCallback(async (): Promise<boolean> => {
     const granted = await mobileSensorService.requestPermission();

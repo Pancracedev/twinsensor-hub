@@ -37,9 +37,10 @@ export class MobileSensorService {
   private accelerationCallbacks: Set<AccelerationCallback> = new Set();
   private isListening = false;
   private permissionGranted = false;
+  private initialized = false;
 
   private constructor() {
-    this.setupEventListeners();
+    // Don't setup listeners here - wait for client initialization
   }
 
   public static getInstance(): MobileSensorService {
@@ -47,6 +48,14 @@ export class MobileSensorService {
       MobileSensorService.instance = new MobileSensorService();
     }
     return MobileSensorService.instance;
+  }
+
+  public initialize(): void {
+    if (this.initialized || typeof window === 'undefined') {
+      return;
+    }
+    this.setupEventListeners();
+    this.initialized = true;
   }
 
   /**

@@ -174,4 +174,25 @@ class SocketService {
   }
 }
 
-export const socketService = new SocketService();
+let instance: SocketService | null = null;
+
+/**
+ * Get singleton instance (lazy initialization)
+ */
+export function getSocketService(): SocketService {
+  if (!instance) {
+    instance = new SocketService();
+  }
+  return instance;
+}
+
+export const socketService = {
+  connect: (deviceId: string) => getSocketService().connect(deviceId),
+  disconnect: () => getSocketService().disconnect(),
+  on: <T = any>(event: string, callback: (data: T) => void) =>
+    getSocketService().on(event, callback),
+  off: (event: string) => getSocketService().off(event),
+  emit: <T = any>(event: string, data: T) =>
+    getSocketService().emit(event, data),
+  isConnected: () => getSocketService().isConnected(),
+};
