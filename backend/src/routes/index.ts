@@ -1,5 +1,7 @@
 import { Router } from 'express';
 import { deviceController, sessionController, sensorController } from '../controllers/index.js';
+import { AuthController } from '../controllers/auth.controller.js';
+import { authMiddleware } from '../middleware/auth.middleware.js';
 
 const router = Router();
 
@@ -101,5 +103,33 @@ router.get('/health', (_req, res) => {
     timestamp: new Date().toISOString(),
   });
 });
+
+// ============================================================================
+// Authentication Routes
+// ============================================================================
+
+/**
+ * POST /api/auth/register
+ * Register a new device and receive auth token
+ */
+router.post('/auth/register', AuthController.registerDevice);
+
+/**
+ * POST /api/auth/refresh
+ * Refresh authentication token
+ */
+router.post('/auth/refresh', authMiddleware, AuthController.refreshToken);
+
+/**
+ * GET /api/auth/validate
+ * Validate current token
+ */
+router.get('/auth/validate', authMiddleware, AuthController.validateToken);
+
+/**
+ * POST /api/auth/logout
+ * Logout device and invalidate session
+ */
+router.post('/auth/logout', authMiddleware, AuthController.logout);
 
 export default router;
